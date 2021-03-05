@@ -1,0 +1,83 @@
+.hero4 {
+  @include breakpoint-up(md) {
+    margin-top: 5rem;
+  }
+  @include breakpoint-down(sm) {
+    padding: 4.5625rem 1rem;
+  }
+
+  //   padding: 0 1rem;
+
+  &__content {
+    @include breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+
+    .content {
+      @include breakpoint-up(md) {
+        &:not(:last-child) {
+          margin-right: 3.75rem;
+        }
+      }
+      @include breakpoint-down(md) {
+        &:not(:last-child) {
+          margin: 0;
+          margin-bottom: 2.1875rem;
+        }
+      }
+      @include breakpoint-down(sm) {
+        &:not(:last-child) {
+          margin-bottom: 2.1875rem;
+        }
+      }
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .img {
+        @include breakpoint-up(sxl) {
+          width: 12.5rem;
+        }
+        //img-tag
+      }
+    }
+    .c-1 {
+      @include breakpoint-down(md) {
+        flex: 50%;
+      }
+      @include breakpoint-down(sm) {
+        flex: 100%;
+      }
+    }
+    .c-2 {
+      @include breakpoint-down(md) {
+        flex: 50%;
+      }
+      @include breakpoint-down(sm) {
+        flex: 100%;
+      }
+    }
+    .c-3 {
+      @include breakpoint-down(md) {
+        flex: 50%;
+      }
+      @include breakpoint-down(sm) {
+        flex: 100%;
+      }
+    }
+    .c-4 {
+      @include breakpoint-down(md) {
+        flex: 50%;
+      }
+      @include breakpoint-down(sm) {
+        flex: 100%;
+      }
+    }
+    .c-5 {
+      @include breakpoint-down(md) {
+        flex: 100%;
+      }
+    }
+  }
+}

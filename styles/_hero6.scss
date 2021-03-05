@@ -1,0 +1,103 @@
+.hero6 {
+  @include breakpoint-down(xl) {
+    padding: 2rem 4rem;
+  }
+  @include breakpoint-down(lr) {
+    padding: 2rem 2rem;
+  }
+  @include breakpoint-down(md) {
+    padding: 2rem 1rem;
+  }
+  @include breakpoint-down(sm) {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  padding: 2rem 6rem;
+  background: $footer;
+  &__info {
+    @include breakpoint-down(xl) {
+      width: 50%;
+    }
+    @include breakpoint-down(lr) {
+      width: 60%;
+    }
+    @include breakpoint-down(md) {
+      width: 80%;
+    }
+    @include breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+    width: 36%;
+    .img {
+      @include breakpoint-up(md) {
+        width: 5rem;
+        height: 5rem;
+      }
+      @include breakpoint-down(sm) {
+        width: 4rem;
+        height: 4rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .info-1 {
+      @include breakpoint-down(sm) {
+        margin-top: 1rem;
+        align-items: center;
+      }
+      align-items: flex-start;
+      a {
+        @include breakpoint-down(sm) {
+          margin-bottom: 1rem;
+        }
+        color: $DarkGrayishBlue;
+        font-size: 1.2rem;
+      }
+    }
+    .info-2 {
+      @include breakpoint-down(sm) {
+        margin-top: 1rem;
+        align-items: center;
+      }
+      align-items: flex-start;
+      a {
+        @include breakpoint-down(sm) {
+          margin-bottom: 1rem;
+        }
+        color: $DarkGrayishBlue;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+    .info-3 {
+      @include breakpoint-down(sm) {
+        margin-top: 1rem;
+        align-items: center;
+      }
+      align-items: flex-start;
+      a {
+        color: $DarkGrayishBlue;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+  }
+  &__social {
+    @include breakpoint-down(sm) {
+      margin: 2.5rem 0;
+      width: 180px;
+    }
+    width: 100px;
+    .icon {
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}

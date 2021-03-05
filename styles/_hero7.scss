@@ -1,0 +1,15 @@
+.hero7 {
+  width: 100%;
+  padding: 0.5rem;
+  background: #fff;
+  &__groot {
+    @include breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    span {
+      color: $LightBlue;
+    }
+  }
+}

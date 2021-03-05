@@ -1,0 +1,58 @@
+.hero2 {
+  @include breakpoint-down(sm) {
+    margin-bottom: 6.4375rem;
+  }
+  margin-top: 5.25rem;
+  padding: 0 1rem;
+  &__title {
+    text-align: center;
+
+    h1 {
+      @include breakpoint-down(sm) {
+        max-width: 18.5rem;
+      }
+      color: $DarkGrayishBlue;
+      margin-bottom: 1.25rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    p {
+      @include breakpoint-down(md) {
+        max-width: 60%;
+      }
+      @include breakpoint-up(md) {
+        max-width: 70%;
+      }
+      @include breakpoint-up(xl) {
+        max-width: 50%;
+      }
+      @include breakpoint-up(sxl) {
+        max-width: 30%;
+      }
+      @include breakpoint-down(sm) {
+        margin-bottom: 2.25rem;
+        max-width: 95%;
+      }
+      color: $GrayishBlue;
+      font-size: 1.25rem;
+      margin-bottom: 3.75rem;
+    }
+  }
+  &__img {
+    width: 100%;
+
+    img {
+      @include breakpoint-down(md) {
+        width: 60%;
+      }
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+
+      width: 60%;
+
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

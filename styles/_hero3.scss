@@ -1,0 +1,100 @@
+.hero3 {
+  padding: 0 1rem;
+  &__title {
+    @include breakpoint-down(sm) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    text-align: center;
+    h1 {
+      @include breakpoint-down(sm) {
+        max-width: 18.5rem;
+      }
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $DarkGrayishBlue;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      @include breakpoint-down(sm) {
+        max-width: 18.75rem;
+        margin-bottom: 3.125rem;
+      }
+      font-size: 1.25rem;
+      color: $GrayishBlue;
+      // margin-bottom: 2.5rem;
+    }
+  }
+  &__content {
+    @include breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+    .content {
+      @include breakpoint-up(md) {
+        padding: 1rem;
+        width: 28.125rem;
+      }
+      @include breakpoint-down(sm) {
+        padding: 0.5rem;
+      }
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .img {
+        img {
+          padding: 1rem;
+        }
+      }
+      h1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $DarkGrayishBlue;
+      }
+      p {
+        font-size: 1rem;
+        color: $GrayishBlue;
+        max-width: 18.75rem;
+      }
+    }
+    .c-1 {
+      @include breakpoint-down(md) {
+        padding: 0 3rem;
+        flex: 100%;
+      }
+      @include breakpoint-down(sm) {
+        margin-bottom: 1rem;
+      }
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .c-2 {
+      @include breakpoint-down(md) {
+        padding: 0 3rem;
+        flex: 50%;
+      }
+      @include breakpoint-down(sm) {
+        flex: 100%;
+        margin-bottom: 1rem;
+      }
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .c-3 {
+      @include breakpoint-down(md) {
+        padding: 0 3rem;
+        flex: 50%;
+      }
+      @include breakpoint-down(sm) {
+        flex: 100%;
+      }
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

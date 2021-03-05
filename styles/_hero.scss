@@ -1,0 +1,110 @@
+.hero {
+  @include breakpoint-down(sm) {
+    padding: 0 1rem;
+  }
+  margin-top: 5.4375rem;
+  &__title {
+    text-align: center;
+    h1 {
+      @include breakpoint-down(sm) {
+        max-width: 18.75rem;
+      }
+
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $DarkGrayishBlue;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      @include breakpoint-up(sxl) {
+        max-width: 43.75rem;
+      }
+      @include breakpoint-down(xl) {
+        max-width: 43.75rem;
+      }
+      @include breakpoint-down(xl) {
+        max-width: 43.75rem;
+      }
+      @include breakpoint-down(md) {
+        max-width: 43.75rem;
+      }
+      @include breakpoint-down(sm) {
+        max-width: 100%;
+        margin-bottom: 2.3125;
+      }
+      color: $GrayishBlue;
+      font-size: 1.25rem;
+      max-width: 36%;
+      margin-bottom: 2.75rem;
+    }
+  }
+  &__content {
+    @include breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero__img {
+      flex: 1;
+      img {
+        @include breakpoint-down(xl) {
+          margin-left: 5rem;
+          width: 80%;
+        }
+        @include breakpoint-down(md) {
+          margin-left: -50px;
+          width: 100%;
+        }
+        @include breakpoint-down(sm) {
+          margin-left: 0;
+          margin-bottom: 1.9375rem;
+          width: 100%;
+        }
+        width: 80%;
+        margin-left: 7.5rem;
+      }
+    }
+    .hero__features {
+      flex: 1;
+      @include breakpoint-down(sm) {
+        display: flex;
+        align-items: center;
+      }
+
+      .sub__content {
+        @include breakpoint-up(sxl) {
+          max-width: 23.75rem;
+        }
+        @include breakpoint-down(xl) {
+          max-width: 23.75rem;
+        }
+        @include breakpoint-down(md) {
+          max-width: 16.25rem;
+          margin-left: 2.4375rem;
+        }
+        @include breakpoint-down(sm) {
+          max-width: 22.5rem;
+          margin-left: 0;
+        }
+        max-width: 50%;
+        margin-left: 3.4375rem;
+        margin-bottom: 2.1875rem;
+        h1 {
+          @include breakpoint-down(sm) {
+            text-align: center;
+          }
+          color: $DarkGrayishBlue;
+          margin-bottom: 0.75rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+        p {
+          @include breakpoint-down(sm) {
+            text-align: center;
+          }
+          color: $GrayishBlue;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
